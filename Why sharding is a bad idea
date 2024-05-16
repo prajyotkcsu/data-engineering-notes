@@ -12,5 +12,7 @@ e. although things like routing logic, join logic can be done using third-party 
 Therefore, sharding is difficult and an ever evolving problem. No engineering effort is enough to manage sharding entirely.
 
 ## What if companies need relational database and still have sharding?
-Well, CockroachDB does that well.
-CockroachDB is  
+Well, CockroachDB does that well because adding a node/shard is as simple as clicking 'add node' and 100's of hours are saved.
+1. app treats this db as a single node postgres, no routing logic is required.
+2. Auto schema update
+
