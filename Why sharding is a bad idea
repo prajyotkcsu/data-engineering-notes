@@ -1,0 +1,11 @@
+## Why sharding is a bad idea?
+
+1. Sharding is logical splitting of a database to make reads and writes efficient. By having 3 shards/subset of data reads and writes becomes simpler because there is lesser data to deal with. But the problem with dividing databases are as follows,
+a. deciding which data goes into which shard
+b. in case of data bulging in one shard do we further shard the shard.
+c. if b arise, routing logic needs to be changed as well.
+d. lastly for data analysis, data from all shards need to be merged together which requires engineering.
+e. although things like routing logic, join logic can be done using third-party tools but they come with their set of problems.
+
+Therefore, sharding is difficult and an ever evolving problem. No engineering effort is enough to manage sharding entirely.
+
